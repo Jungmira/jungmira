@@ -7,10 +7,7 @@
   <title>Document</title>
 </head>
 <body>
-
 <!-- table>caption+(colgroup>col[width=""]*4)+(thead>tr>th{text}*4)+(tbody>tr*5>td{text}*4) -->
-
-
 <!-- 표 -->
 <table border="1" width="100%" summary="3강의실 스마트웹엡 반입니다.">
   <!-- 표제목 -->
@@ -25,44 +22,34 @@
     <col />
   </colgroup>
 
-
-  <!-- 합계가있는경우 -->
-  <tfoot>
-  <tr>
-      <td>foot</td>
-      <td>foot</td>
-      <td>foot</td>
-      <td>foot</td>
-      <td>foot</td>
-  </tr>
-  </tfoot>
-  <!-- 테이블 머릿말 -->
   <thead>
     <tr>
-        <!-- td{title$}*4 -->
-        <th scop="col">월</th>
-        <th scop="col">화</th>
-        <th >수</th>
-        <th>목</th>
-        <th>금</th>
+      <th scope="col" id="product">품목</th>
+      <th scope="col" id="price">단가</th>
+      <th scope="col" id="ea">수량</th>
+      <th scope="col" id="person">작업자</th>
+      <th scope="col" id="etc">비고</th>
     </tr>
   </thead>
-
   <!-- 테이블 infomation -->
   <tbody>
     <tr>
-        <td colspan="5">titel</td>
-
-    </tr>
-    <tr>
-        <td rowspan="2">title1</td>
+        <th scope="row" id="title1">title1</th>
         <td>title2</td>
         <td>title3</td>
         <td>title4</td>
         <td>title4</td>
     </tr>
     <tr>
-        <td>title2</td>
+        <th rowspan="2" scope="rowgroup" id="title1sub">title1</th>
+        <th>title2</th>
+        <td>title3</td>
+        <td headers="price person title1 title1sub">title4</td>
+        <td>title4</td>
+    </tr>
+    <tr>
+
+        <th>title2</th>
         <td>title3</td>
         <td>title4</td>
         <td>title4</td>
@@ -70,3 +57,15 @@
     </tbody>
 
 </table>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
