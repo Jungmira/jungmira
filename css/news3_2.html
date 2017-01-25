@@ -2,90 +2,79 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>news3</title>
-    <style>
-      /*reset*/
-      *{margin:0; padding:0;}
-      ul,ol {list-style:none;}
-      a{text-decoration: none; color:#000;}
-      img{vertical-align: top}
+    <title>전자신문</title>
+    <style type="text/css">
+    body{
+      background: url(http://static.naver.net/newsstand/img/20121231/bg_bd.png);
+    }
       .wrap{
+        border:1px #F00 solid;
         width:900px;
         height:540px;
-        outline:1px #F00 solid;
-        margin:30px auto;
+        margin: 0 auto;
+        padding:0 25px;
+        background-image:url(http://static.naver.net/newsstand/img/20121231/bg_panel.png)
       }
-      .wrap .top{
-        outline: 1px #F00 solid;
-        height:111px;
-        margin:0 30px 20px;
-      }
-      .wrap .contents{
-        outline:1px #00F solid;
-        height:380px;
-        margin:0 30px;
-      }
-      .contents .left-contents{
-        outline:1px #00F solid;
-        width:580px;
-        height:100%;
-      }
-      .contents .first-news strong{
-        font-size:24px;
-        display: block;
-        margin-bottom:10px;
-        outline:1px #F00 solid;
+      header{outline:1px #F00 solid; margin:0 30px 20px; height:91px; padding-top:20px;}
+      section{outline: 1px #F00 solid; height:380px; margin: 0 30px;}
+      .left-contents{outline: 1px #00F solid; width:513px; height:100%; float:left; margin-right:20px; }
+      .left-contents .first-news{outline:1px #000 solid; height:131px; margin-bottom: 10px;font-size:12px;}
+      .left-contents .first-news h2{font-size:20px; color:#d91b5c; margin:0;}
+      .left-contents .first-news .thumb{width:160px; height:94px; float:left;}
 
-      }
-      .contents .first-news span.thumb{
-        width:160px; height:94px auto; outline: 1px #0F0 solid;
-        display: block;
-        float:left;
-        margin-right:15px;
+      .left-contents .first-news .thumb img{width:100%; height:100%;}
+      .left-contents .first-news .list{background-color: #FF0; margin-left:175px;}
+      .left-contents .first-news .list ul a{text-decoration:none; color:#000;}
 
-      }
-      .contents .first-news span.thumb img{
-        width:100%;
-        height:100%;
-      }
-      .contents .first-news li{
-        outline:1px #F0F solid;
-        margin-left:175px;
-        font-size:12px;
-      }
-      .contents .first-news li.first span.thumb + span{
-        outline:1px #00F solid;
-      }
-      .contents .first-news li.first{
-        margin:0 0 10px 0;
-      }
 
+
+      .left-contents .down-news .second-news{outline: 1px #000 solid; width:162px; height: 217px; padding-top:9px 0 10px; float:left; }
+      .left-contents .down-news .third-news{outline: 1px #000 solid; width:350px; height:229px; float:right; }
+
+
+
+
+
+      .right-contents{outline:1px #00F solid;  height:100%; margin-left:553px;}
+      .right-contents .first-news{outline:1px #0F0 solid; height:110px;}
+      .right-contents .second-news{outline:1px #0F0 solid; height:255px; margin-top:15px;}
     </style>
   </head>
   <body>
     <div class="wrap">
-      <header class="top"></header>
-      <section class="contents">
+      <header>
+        <article>
+
+        </article>
+      </header>
+      <section>
         <div class="left-contents">
           <article class="first-news">
-            <ul>
-              <li class="first">
-                <a href="">
-                  <strong>삼성 “갤노트7 발화 원인은 배터리 결함 때문”</strong>
-                  <span class="thumb"><img src="http://static.naver.net/newsstand/2017/0124/etnews/124047/001.jpg" alt=""></span>
-                  <span>삼성전자는 23일 기자간담회를 갖고 갤럭시 노트 7 발화 원인이 배터리 자체 결함이라고 최종 발표했다.차기작 `갤럭시S8`
-
-                </a>
-              </li>
-              <li><a href="">[이슈분석]삼성전자 "갤럭시S8 혁신으로 세계 스마트폰 1</a></li>
-              <li><a href="">[이슈분석]삼성전자 "갤럭시S8 혁신으로 세계 스마트폰 1</a></li>
-            </ul>
+            <h2 class="pink">한컴 'ICT 헬스케어 타운' 짓는다</h2>
+            <div class="fc">
+              <div class="thumb">
+                <img src="http://static.naver.net/newsstand/2017/0125/etnews/000206/001.jpg" alt="">
+              </div>
+              <div class="list">
+                <p>한글과컴퓨터가 헬스케어 시장에 진출한다. 정보통신기술(ICT) 기반의 스마트 헬스케어 타운을 건설, 새로운 생태계 모델을 제시한다. `국민 오피스`를 넘어 `국민 건강`까지...</p>
+                <ul>
+                  <li><a href="">삼성, 헬스케어 전문기업 `눔`에 투자</a></li>
+                  <li><a href="">한컴그룹, 이상헌 부회장 선임...3000억 규모 SW그룹으로 성장</a></li>
+                </ul>
+              </div>
+            </div>
           </article>
-
+          <div class="down-news"></article>
+            <article class="second-news"></article>
+            <artkcle class="third-news"></article>
+          </div>
         </div>
-        <div class="right-contents"></div>
-      </section>
 
+        <div class="right-contents">
+          <article class="first-news"></article>
+          <article class="second-news"></article>
+        </div>
+      </section>
     </div>
 
 
