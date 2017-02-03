@@ -7,6 +7,7 @@
     * {margin:0; padding:0;}
     li{list-style-type: none;}
     body{font-size:12px;}
+    a {text-decoration:none;}
     .header{border-bottom:1px #00f solid; height:30px;}
     .header .gnb{width:990px; margin:0 auto; height:30px;}
     .header .gnb .site_option{overflow: hidden; margin-top: 5px;}
@@ -33,21 +34,32 @@
     .lnb .top .serch .zoom {background:rgb(59,89,153); width:38px; height:25px; position:absolute;left:625px;top:67px;}
     .lnb .top .serch .zoom img{width:13px; position:absolute;left:11px;top:5px;}
 
-    .nav{width:990px; height:76px;margin:0 auto; background: rgb(130, 245, 39);border:1px #F00 solid;}
-    .nav>ul{height:39px;background: #ccc;}
-    .nav ul ul li{float:left;}
-    .nav>ul>li{float:left;}
+    .nav{width:990px; height:76px;margin:0 auto; border:1px #F00 solid;}
+    .nav>ul{height:39px;background: rgb(59,89,153);}
+    .nav>ul>li{float:left;line-height:38px; font-size:14px; background-image: url(../images/bobea/icon_open.png)}
+    .nav>ul>li>a{display:block;padding:0 11px;}
+    .nav ul ul{position:absolute; display:none;}
+    .nav li.on ul{display:block;}
+    .nav ul ul li{float:left;margin:0 10px;}
     .nav>ul>li>a{display:block;}
 
 
+    .main{width:990px; height:1627px;margin:0 auto;background:rgb(173, 140, 196);position:relative;left:0}
+    .main .tophead{width:752px; height:102px; margin-top:5px;background: rgb(44, 196, 207);}
+
+    .main .tophead .left {width:520px;width:520px;height:102px; border:1px #ccc solid;float:left;margin-left:5px;}
+    .main .tophead .left img{width:520px;}
+    .main .tophead .right{float:left;width:220px;height:100px;border:1px #ccc solid;}
+    .main .side{width:235px;height: 1343px;border:1px #ccc; position:absolute; top:5px;right:0;background: rgb(212, 106, 114);}
+    .main .topbottom{width:400px; height:234px;border:1px #ccc solid;margin-top:11px;}
+    .main .topbottom .left{width:400px; height:233px;border:1px #ccc}
+    .main .topbottom .right{width:323px; height:233px;border-bottom: 1px #ccc solid;}
+    .main .topbottom .in_left{width: height: border: 1px #ccc solid;}
+    .main .topbottom .in_right{width: height:}
+    .main .top
 
 
 
-
-
-
-
-    .main{border:1px #000 solid; width:990px; height:1627px;margin:0 auto;}
     .footer{border:1px rgb(244, 13, 240) solid; width:990px;height:173px;margin:0 auto;}
 
 
@@ -118,18 +130,36 @@
               <li><a href="">튜닝카매장</a></li>
               <li><a href="">올드카매장</a></li>
               <li><a href="">오토캘러리매장</a></li>
-          </li>
             </ul>
+          </li>
           <li><a href="">국산중고차</a></li>
           <li><a href="">수입중고차</a></li>
           <li><a href="">내차팔기</a></li>
           <li><a href="">커뮤니티</a></li>
-          <li><a href="">더보기</a></li>              
+          <li><a href="">더보기</a></li>
       </ul>
     </div>
 
     </div>
-    <div class="main"></div>
+    <div class="main">
+      <div class="tophead">
+        <div class=left><img src="../bobe/top_car1.png" alt=""></div>
+        <div class=right><img src="" alt=""></div>
+      </div>
+      <div class="side">
+
+
+
+      </div>
+      <div class="topbottom">
+        <div class="left"><img src="" alt=""></div>
+        <div class="right"></div>
+
+      </div>
+      <div class="siver">
+
+      </div>
+    </div>
     <div class="footer"></div>
   </body>
 </html>
