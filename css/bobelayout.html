@@ -30,13 +30,15 @@
 
 
     .lnb .top .serch input{width:238px; height:21px;border:2px rgb(59,89,153) solid;position:absolute;left:387px;top:67px}
-    .lnb .top .serch .zoom {background:rgb(59,89,153); width:38px; height:21px; position:absolute;left:625px;top:67px;}
-    .lnb .top .serch .zoom img{width:13px;}
+    .lnb .top .serch .zoom {background:rgb(59,89,153); width:38px; height:25px; position:absolute;left:625px;top:67px;}
+    .lnb .top .serch .zoom img{width:13px; position:absolute;left:11px;top:5px;}
 
-    .nav{width:990px; height:76px;margin:0 auto; background: rgb(130, 245, 39);}
-    .nav>ul{height:39px;}
+    .nav{width:990px; height:76px;margin:0 auto; background: rgb(130, 245, 39);border:1px #F00 solid;}
+    .nav>ul{height:39px;background: #ccc;}
     .nav ul ul li{float:left;}
-    .nav ul li{float:left;}
+    .nav>ul>li{float:left;}
+    .nav>ul>li>a{display:block;}
+
 
 
 
@@ -105,7 +107,7 @@
     </div>
       <div class="nav">
         <ul>
-          <li><a href="">사이버매장</a>
+          <li class="on"><a href="">사이버매장</a>
             <ul>
               <li><a href="">국산차매장</a></li>
               <li><a href="">수입차매장</a></li>
@@ -122,8 +124,7 @@
           <li><a href="">수입중고차</a></li>
           <li><a href="">내차팔기</a></li>
           <li><a href="">커뮤니티</a></li>
-          <li><a href="">더보기</a></li>
-        </li>
+          <li><a href="">더보기</a></li>              
       </ul>
     </div>
 
