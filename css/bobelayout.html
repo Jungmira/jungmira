@@ -8,6 +8,8 @@
     li{list-style-type: none;}
     body{font-size:12px;}
     a {text-decoration:none;}
+    input,botton{vertical-align:middle;}
+    legend{font-size:0;text-indent:-9999px;}
     .header{border-bottom:1px #00f solid; height:30px;}
     .header .gnb{width:990px; margin:0 auto; height:30px;}
     .header .gnb .site_option{overflow: hidden; margin-top: 5px;}
@@ -52,7 +54,6 @@
     .main .tophead .left img{width:520px;border:1px #ccc solid;}
     .main .tophead .right{float:left;width:220px;height:100px;}
     .main .tophead .right img{width:220px;border:1px #ccc solid;}
-    .main_in .side{width:235px;height: 1343px;border:1px #000 solid; position:absolute; top:0;right:0;}
 
     .main_in .topbottom{width:734px; height:234px;margin-top:11px;position:relative; left:0;top:0;}
     .main_in .topbottom .left{width:400px; height:232px;margin-right: 8px;border:1px #ccc solid; border-bottom:none;}
@@ -101,8 +102,18 @@
     .main_in .wide_5 .car_1{text-align: center;}
     .main_in .wide_5 .car_1 img{width:136px;border:1px #ccc solid;}
 
-    .main_in .side{background:rgb(14, 57, 6);width:}
-    .main_in .side .login{height:100px;border-bottom:1px #ccc solid;}
+    .main_in .side{margin-left:753px;}
+
+    .side .login fieldset{background: rgb(231, 87, 90);}
+    .side .login fieldset{padding:12px;}
+    .side .login fieldset input[type="text"],
+    .side .login fieldset input[type="password"]{width:149px;height:26px;border:1px #333 solid;float:left;}
+    .side .login fieldset input[type="text"]{border-bottom:0;}
+    .side .login fieldset input[type="submit"]{width:54px;height:54px;}
+
+
+
+
 
 
 
@@ -414,23 +425,25 @@
                       </div>
                       </li>
                     <ul>
-                    </div>
+                  </div>
+                <div class="side">
+                  <div class="login">
+                    <fieldset>
+                      <legend>로그인</legend>
+                      <div class="login_field">
+                        <input type="text" name="id"/>
+                        <input type="password" name="password"/>
+                        <input type="submit" name="" value="login"/>
+                      </div>
+                      <div class="login_option">
+                        <span class="login_le"><input type="checkbox" id="idsave"><label for="idsave">ID저장<label></span>
+                        <span class="login_ri"><a href="">회원가입</a><a href="">ID/비밀번호찾기</a></span>
+                      </div>
+                    <fieldset>
+                  </div>
+                </div>
           </div>
-        </div>
-
-        <div class="side">
-          <div class="login">
-            <div>
-              <label for="id">
-              <input type="text" name="id" id="id" placeholder="아이디" />
-            </div>
-
-          </div>
-
-        </div>
       </div>
-
-    </div>
     <div class="footer"></div>
   </body>
 </html>
